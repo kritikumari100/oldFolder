@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Hover Effect</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: pink;
+  box-shadow: darkblue;
+}
+
+.card-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.card-content p {
+  font-size: 1em;
+  color: #555;
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-content">
+      <h2>Card Title</h2>
+      <p>This is some description about the card. Hover to see the effect.</p>
+    </div>
+  </div>
+</body>
+</html>
